@@ -145,7 +145,9 @@ img.right{
 }
 
 .section {
-    padding-bottom: 4em;
+    margin-bottom: 4em;
+    display: inline-block;
+    width: 100%;
 }
 
 .left-align {
@@ -161,8 +163,7 @@ body a:hover, body a:active{
     color: #E7856E;
 }
 
-.subheader {
-    font-size:20px;
+.text-pink {
     color: #9C3E50;
 }
 
@@ -216,12 +217,12 @@ body a:hover, body a:active{
     color: #abaaaa !important;
 }
 
-.float-left-shrink-width {
+.work-details {
     float:left;
     width:80%;
 }
 
-.img-padding-top {
+.work-img {
     padding-top: 1em;
 }
 
@@ -239,4 +240,14 @@ body a:hover, body a:active{
     height: 50px;
     float: left;
     padding-right: 15px;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 18px;
 }
