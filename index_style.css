@@ -2,7 +2,6 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
     font-family: 'Ubuntu';
     background-color: #000000;
  }
@@ -12,9 +11,10 @@
 	margin: 0 auto !important;
 	float: none !important;
 	text-align: center;
-    min-height: 100%;
     color: #abaaaa;
-
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 @-webkit-keyframes fontfix {
@@ -140,9 +140,11 @@ body a:hover, body a:active{
 #footer {
     color: #5f5f5f;
     font-size: 12px;
-    clear: both;
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 
 .grey-title {
@@ -189,7 +191,6 @@ h1, h2, h3 {
 }
 
 h3 {
-    font-weight: normal;
     font-size: 18px;
 }
 
