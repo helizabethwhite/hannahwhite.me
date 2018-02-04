@@ -24,7 +24,7 @@
 
 #name a:link, #name a:visited{
     text-align: center;
-    color: #464646;
+    color: #3c3c3c;
     font-family: 'Ubuntu';
     font-size: 100px;
     text-decoration: none;
@@ -46,13 +46,16 @@ li{
     display: inline;
 }
 
+#nav a, #name a {
+    font-weight: normal;
+}
+
 #nav a:link, #nav a:visited{
     font-size: 25px;
 	text-decoration: none;
     font-family: 'Ubuntu';
-	color: #cfcfcf;
+	color: #b5b4b4;
     padding: 4px;
-
 }
 
 #nav a:hover, #nav a:active{
@@ -78,15 +81,6 @@ li{
     text-align: left;
 }
 
-#content a:link, #content a:visited{
-    color: #C25A41;;
-    text-decoration: none;
-}
-
-#content a:hover, #content a:active{
-    color: #E7856E;
-}
-
 img.center{
     padding-top: 40px;
     padding-bottom: 35px;
@@ -109,12 +103,13 @@ img.center{
 }
 
 body a:link, body a:visited{
-    color: #C25A41;
+    color: #d49181;
     text-decoration: none;
+    font-weight: bold;
 }
 
 body a:hover, body a:active{
-    color: #E7856E;
+    color: #ffcabd;
 }
 
 .text-pink {
@@ -126,7 +121,7 @@ body a:hover, body a:active{
 }
 
 .indented {
-    margin-left: 0.7em;
+    margin-left: 1.5em;
 }
 
 .course {
@@ -145,11 +140,6 @@ body a:hover, body a:active{
     bottom: 0;
     left: 0;
     padding: 1rem;
-}
-
-.grey-title {
-    color:#413D3D;
-    font-weight:bold;
 }
 
 .emphasize-title {
@@ -174,14 +164,15 @@ body a:hover, body a:active{
     padding-top: 1em;
 }
 
-.span-emphasize {
-    color:#9C3E50;
+.emphasize {
+    color:#804e57;
     font-size:17px;
+    font-weight: bold;
 }
 
-.span-emphasize-secondary {
-    color:#413D3D;
-    font-size:17px;
+.emphasize-secondary {
+    color: #a74949;
+    font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -196,4 +187,9 @@ h3 {
 
 .prof-pic {
     height: 400px;
+    transition: .5s;
+}
+
+.location {
+    font-size: 80%;
 }
