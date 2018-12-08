@@ -1,12 +1,14 @@
- html {
+html {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu';
+    font-display: fallback;
     background-color: #000000;
+    font-size: 18px;
  }
 
- body {
+body {
     max-width: 80%;
 	margin: 0 auto !important;
 	float: none !important;
@@ -24,8 +26,7 @@
 
 #name a:link, #name a:visited{
     text-align: center;
-    color: #3c3c3c;
-    font-family: 'Ubuntu';
+    color: #5f5f5f;
     font-size: 100px;
     text-decoration: none;
     text-transform: lowercase;
@@ -53,7 +54,6 @@ li{
 #nav a:link, #nav a:visited{
     font-size: 25px;
 	text-decoration: none;
-    font-family: 'Ubuntu';
 	color: #b5b4b4;
     padding: 4px;
 }
@@ -76,7 +76,6 @@ li{
     margin-right: 150px;
     font-size: 15px;
     text-decoration: none;
-    font-family: 'Ubuntu';
     color: #abaaaa;
     text-align: left;
 }
@@ -152,7 +151,6 @@ body a:hover, body a:active{
 
 .icon {
     margin-left: .33em;
-    color: #abaaaa !important;
 }
 
 .work-details {
@@ -165,13 +163,13 @@ body a:hover, body a:active{
 }
 
 .emphasize {
-    color:#804e57;
-    font-size:17px;
+    color: #ffa662;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .emphasize-secondary {
-    color: #a74949;
+    color:#b7848d;
     font-weight: bold;
 }
 
@@ -186,10 +184,55 @@ h3 {
 }
 
 .self-portrait {
-    height: 400px;
-    transition: .5s;
+    height: 350px;
+    transition: .8s;
+}
+
+figure {
+    margin: 2em 0;
+}
+
+figcaption {
+    font-size: 14px;
 }
 
 .location {
     font-size: 80%;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?hsbwe7');
+    src:  url('fonts/icomoon.eot?hsbwe7#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?hsbwe7') format('truetype'),
+      url('fonts/icomoon.woff?hsbwe7') format('woff'),
+      url('fonts/icomoon.svg?hsbwe7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-embed2:before {
+    content: "\ea80";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
+  
